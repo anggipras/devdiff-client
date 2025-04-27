@@ -1,0 +1,20 @@
+<div
+  class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition p-4"
+>
+  <img
+    [src]="image.url"
+    alt="{{ image.filename }}"
+    class="w-full h-48 object-cover"
+  />
+  <div class="p-4">
+    <h2 class="font-semibold text-lg mb-2">Image {{ index + 1 }}</h2>
+    <p class="text-sm mb-2">Image {{ index + 1 }} description</p>
+    <a
+      [href]="image.url"
+      target="_blank"
+      class="text-blue-600 hover:underline text-sm"
+    >
+      View Full Image
+    </a>
+  </div>
+</div>
